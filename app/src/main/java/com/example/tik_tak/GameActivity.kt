@@ -157,7 +157,7 @@ class GameActivity : AppCompatActivity() {
 
 
 
-        // Проверка на выигрышные комбинации
+     
         for (i in 0..2) {
             // Проверка по горизонтали
             if (buttons[i][0].text.toString() == buttons[i][1].text.toString() && buttons[i][0].text.toString() == buttons[i][2].text.toString() && buttons[i][0].text.toString().isNotEmpty()) {
@@ -165,14 +165,14 @@ class GameActivity : AppCompatActivity() {
                 startActivityWithResult(role)
                 return
             }
-            // Проверка по вертикали
+          
             if (buttons[0][i].text.toString() == buttons[1][i].text.toString() && buttons[0][i].text.toString() == buttons[2][i].text.toString() && buttons[0][i].text.toString().isNotEmpty()) {
                 role = buttons[0][i].text.toString()
                 startActivityWithResult(role)
                 return
             }
         }
-        // Проверка по диагоналям
+       
         if (buttons[0][0].text.toString() == buttons[1][1].text.toString() && buttons[0][0].text.toString() == buttons[2][2].text.toString() && buttons[0][0].text.toString().isNotEmpty()) {
             role = buttons[0][0].text.toString()
             startActivityWithResult(role)
