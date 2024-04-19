@@ -146,7 +146,7 @@ class GameActivity : AppCompatActivity() {
         var role = ""
         var quantity = 9
 
-        // Проверка на ничью
+       
         for (i in buttons.indices) {
             for (j in buttons[i].indices) {
                 if (buttons[i][j].text.isNotEmpty()) {
@@ -159,7 +159,7 @@ class GameActivity : AppCompatActivity() {
 
      
         for (i in 0..2) {
-            // Проверка по горизонтали
+           
             if (buttons[i][0].text.toString() == buttons[i][1].text.toString() && buttons[i][0].text.toString() == buttons[i][2].text.toString() && buttons[i][0].text.toString().isNotEmpty()) {
                 role = buttons[i][0].text.toString()
                 startActivityWithResult(role)
