@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tik-Tak</string>
+    <string name="single_player">Single Player</string>
+    <string name="multi_player">Multi Player</string>
+    <string name="tic_tac_game">TIK-TAK GAME</string>
+    <string name="player_one_name">Player 1</string>
+    <string name="player_two_name">Player 2</string>
+    <string name="start">START</string>
+    <string name="switch_text">Switch role: off-X on-0</string>
+    <string name="turn">Turn :</string>
+    <string name="x">X</string>
+    <string name="winner">Winner:</string>
+</resources>

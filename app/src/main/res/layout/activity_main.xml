@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/yellow"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/tic_tac_game"
+        android:layout_marginBottom="40dp"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textStyle="bold">
+
+    </TextView>
+    <Button
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:id="@+id/button_single"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_rounded_variants"
+        android:text="@string/single_player"
+        android:gravity="center" />
+
+    <Button
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:id="@+id/button_multi"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_rounded_variants"
+        android:text="@string/multi_player"
+        android:gravity="center"/>
+</LinearLayout>
