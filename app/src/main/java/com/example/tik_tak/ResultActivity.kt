@@ -1,6 +1,8 @@
 package com.example.tik_tak
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +16,7 @@ class ResultActivity : AppCompatActivity() {
         setContentView(R.layout.activity_result)
         val resultNameTv = findViewById<TextView>(R.id.result_name_tv)
         val resultRoleTv = findViewById<TextView>(R.id.result_role_tv)
+        val restart_bt = findViewById<Button>(R.id.restart_bt)
         val winnerRole = intent.getStringExtra("result").toString()
         if (winnerRole == "X"){
             resultNameTv.setText(intent.getStringExtra("firstPlayerName"))
@@ -25,6 +28,10 @@ class ResultActivity : AppCompatActivity() {
         }else{
             resultNameTv.setText("Sorry")
             resultRoleTv.setText(winnerRole)
+        }
+        restart_bt.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 }

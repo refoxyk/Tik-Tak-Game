@@ -10,4 +10,5 @@
     <string name="turn">Turn :</string>
     <string name="x">X</string>
     <string name="winner">Winner:</string>
+    <string name="restart">restart</string>
 </resources>
